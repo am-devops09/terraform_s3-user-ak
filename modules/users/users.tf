@@ -13,7 +13,7 @@ resource "aws_iam_access_key" "demo-user" {
 
 resource "aws_iam_user_policy" "demo-user-policy" {
   name = var.user-policy
-  user = aws_iam_access_key.demo-user.name
+  user = aws_iam_user.demo-user.name
 
   policy = jsonencode({
     Version: "2012-10-17",
