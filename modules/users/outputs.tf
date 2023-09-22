@@ -4,7 +4,7 @@ output "user_name" {
 }
 
 
-output "user_arn " {
+output "user_arn" {
   value = aws_iam_user.demo-user.arn
   description = "arn of the user "
 }
